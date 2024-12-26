@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "nome": "Bulbasaur",
+      "descricao": "Um Pokémon planta e veneno, conhecido por sua semente nas costas.",
+      "tipos": ["Planta", "Veneno"]
+    },
+    {
+      "id": 4,
+      "nome": "Charmander",
+      "descricao": "Um Pokémon de fogo. A chama na sua cauda mostra sua força vital.",
+      "tipos": ["Fogo"]
+    },
+    {
+      "id": 7,
+      "nome": "Squirtle",
+      "descricao": "Um Pokémon aquático, conhecido por seu casco duro e habilidades com água.",
+      "tipos": ["Água"]
+    }
+  ]
+  
