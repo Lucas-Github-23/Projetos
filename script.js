@@ -1,10 +1,3 @@
-// URL do arquivo JSON
-const jsonUrl = 'pokemon.json';
-
-// Elemento onde os Pokémons serão exibidos
-const pokemonList = document.getElementById('pokemon-list');
-
-// Função para carregar o JSON
 async function carregarPokemons() {
   try {
     const resposta = await fetch(jsonUrl);
@@ -15,6 +8,7 @@ async function carregarPokemons() {
       card.classList.add('pokemon-card');
 
       card.innerHTML = `
+        <img src="images/${pokemon.imagem}" alt="${pokemon.nome}" class="pokemon-imagem">
         <h2>${pokemon.nome} (#${pokemon.id})</h2>
         <p>${pokemon.descricao}</p>
         <div class="tipos">Tipos: ${pokemon.tipos.join(', ')}</div>
@@ -26,6 +20,3 @@ async function carregarPokemons() {
     console.error('Erro ao carregar os dados:', erro);
   }
 }
-
-// Chama a função ao carregar a página
-carregarPokemons();
